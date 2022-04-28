@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Dancing+Script:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/****************NAVBAR*********************/
+nav {
+    overflow: hidden;
+    background-color: antiquewhite;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+}
+/* **********************IMAGE PRINCIPAL**************** */
+
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(/assets/morocco-2349647_1920\ \(1\).jpg)no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+#premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: antiquewhite;
+    box-shadow: 1px 3px 2px black ;
+}
+h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+
+}
+/* ***************PRESENTATION**************** */
+
+#presentation {
+    background-color: antiquewhite;
+    padding: 10px 0px 100px 0;
+}
+#textIntro {
+    padding: 0px 20%;
+}
+#prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagePrestation h4 {
+    font-family: 'Dancing Script', cursive ;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+.imagePrestation img {
+    height: 230px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.473) ;
+}
+.imagePrestation img:hover {
+    /* opacity: 0.5; */
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/* ******************tourisme**************** */
+
+#tourisme {
+    height: 1800px;
+    background-color: whitesmoke;
+    padding: 1px 2%;
+}
+#tourisme h2 {
+    padding-top: 60px;
+}
+#plage {
+    background: url(/assets/beach-352993_640.jpg);
+}
+
+#chef {
+    background: url(/assets/chefchaouen-1921173_640.jpg);
+}
+#casa {
+    background: url(/assets/morocco-484481_640.jpg);
+}
+#gastronomie {
+    background: url(/assets/couscous-3440042_640.jpg);
+}
+
+#tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 326px;
+    width: 55%;
+    max-width: 750px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px black;
+    background-size: cover;
+    border-radius: 10px ;
+    background-position: center;
+}
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: antiquewhite;
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 6px 6px 28px -1px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#tourisme p:hover {
+    opacity: -1;
+    transition: 0.5s;
+}
+#tourisme #casa, #tourisme #plage {
+    float: right;
+}
+#casa p, #plage p {
+    float: left;
+    margin-left: -180px;
+}
+
+/* ***********************FOOTER*************** */
+
+footer {
+    background-color: #524a3a;
+    color: antiquewhite;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px ;
+}
+textarea {
+    height: 120px;
+}
+button {
+    font-size: 1.5em;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(245, 131, 86);
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    background-color: antiquewhite;
+    margin: 60px auto;
+}
+#copyrightetIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+}
+#icons {
+    width: 50%;
+    text-align: right;
+}
+#icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: antiquewhite;
+}
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
